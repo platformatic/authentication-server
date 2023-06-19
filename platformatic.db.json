@@ -1,0 +1,32 @@
+{
+  "$schema": "https://platformatic.dev/schemas/v0.27.0/db",
+  "server": {
+    "hostname": "{PLT_SERVER_HOSTNAME}",
+    "port": "{PORT}",
+    "logger": {
+      "level": "{PLT_SERVER_LOGGER_LEVEL}"
+    }
+  },
+  "db": {
+    "connectionString": "{DATABASE_URL}",
+    "graphql": true,
+    "openapi": true
+  },
+  "migrations": {
+    "dir": "migrations"
+  },
+  "plugins": {
+    "paths": [{
+      "path": "plugin.js",
+      "options": {
+        "provider": "github",
+        "clientId": "{PLT_GITHUB_CLIENT_ID}",
+        "clientSecret": "{PLT_GITHUB_CLIENT_SECRET}"
+      }
+    }]
+  },
+  "types": {
+    "autogenerate": true
+  },
+  "watch": true
+}
