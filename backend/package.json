@@ -1,15 +1,15 @@
 {
   "scripts": {
-    "start": "platformatic db start"
+    "start": "platformatic start"
   },
   "devDependencies": {
     "fastify": "^4.18.0"
   },
   "dependencies": {
     "@fastify/oauth2": "^7.1.0",
-    "@platformatic/sql-graphql": "^0.27.0",
-    "@platformatic/sql-mapper": "^0.27.0",
-    "platformatic": "^0.27.0",
+    "@platformatic/sql-graphql": "^0.28.0",
+    "@platformatic/sql-mapper": "^0.28.0",
+    "platformatic": "^0.28.0",
     "undici": "^5.22.1"
   },
   "engines": {
